@@ -10,7 +10,9 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -30,15 +32,18 @@
         android:id="@+id/tvTweetBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:autoLink="all"
+        android:textColorLink="#00FFFF"
+        android:linksClickable="true"
+        app:layout_constrainedWidth="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constrainedWidth="true"
-        android:autoLink="all"
-        android:linksClickable="true"
-        tools:text="This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body." />
+        tools:text="This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body. This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body. This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body." />
 
 
     <TextView
@@ -54,4 +59,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="19s" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweetBody"
+        app:srcCompat="@drawable/twittercomment" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/twitterlike" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/twitterretweet" />
 </androidx.constraintlayout.widget.ConstraintLayout>
