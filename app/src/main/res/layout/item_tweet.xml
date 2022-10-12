@@ -36,7 +36,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tvUsername"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constrainedWidth="true"
+        android:autoLink="all"
+        android:linksClickable="true"
         tools:text="This is the tweet body. This is the tweet body.This is the tweet body.This is the tweet body.This is the tweet body." />
+
 
     <TextView
         android:id="@+id/tvTime"
