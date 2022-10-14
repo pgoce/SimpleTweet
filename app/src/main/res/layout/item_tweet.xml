@@ -81,6 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweetBody"
         app:srcCompat="@drawable/twitterlike" />
 
     <ImageView
@@ -91,5 +92,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweetBody"
         app:srcCompat="@drawable/twitterretweet" />
 </androidx.constraintlayout.widget.ConstraintLayout>
